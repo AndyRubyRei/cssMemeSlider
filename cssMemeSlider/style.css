@@ -143,7 +143,7 @@ input[type="radio"] {
 
 @media (max-width: 1024px) {
   .css-slider label {
-    right: 8%;
+    right: 10%;
     bottom: 12%;
 
   }
@@ -152,7 +152,7 @@ input[type="radio"] {
 @media (max-width: 768px) {
   .css-slider label {
     right: 45%;
-    bottom: 15%;
+    bottom: 10%;
   }
 
   .signature {
