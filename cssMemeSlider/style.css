@@ -14,11 +14,10 @@ body {
 
 .css-slider {
   display: block;
-  height: 20rem;
-  min-width: 30rem;
-  max-width: 40rem;
+  height: 40rem;
+  min-width: 60rem;
+  max-width: 80rem;
   margin: auto;
-  margin-top: 40px;
   position: relative;
 }
 
@@ -27,7 +26,8 @@ body {
   height: 100%;
   overflow: hidden;
   position: relative;
-  height: 20rem;
+  height: 40rem;
+  color: white;
 }
 
 #slides > .container {
@@ -47,56 +47,66 @@ body {
   width: 25%;
   float: left;
   position: relative;
-  height: 320px;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: #25282a;
+  padding-bottom: 5rem;
+  padding-top: 1.5rem;
 }
 
 .slide img {
   height: 95%;
+  width: 95%;
+  border-radius: 1rem;
 }
 
 input[type="radio"] {
-  position: absolute;
-  left: 50%;
-  bottom: 15px;
-  z-index: 100;
   visibility: hidden;
 }
 
 .css-slider label {
   position: absolute;
-  left: 70%;
-  top: 100%;
-  z-index: 100;
+  left: auto;
+  right: 5%;
+  top: auto;
+  bottom: 10%;
+  z-index: 101;
   width: 1rem;
   height: 1rem;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+  border: 0.1rem solid #71acff;
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
   -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
+  background-color: #71acff;
 }
 
+.css-slider label:hover {
+  border: 0.1rem solid white;
+  background-color: white;
+}
+
+/* .css-slider label:hover {
+  border: 0.1rem solid white;
+  background-color: #25282a;
+
+} */
 .css-slider label[for="slide-btn-1"] {
-  margin-left: -2.25rem;
+  margin-right: -2.25rem;
 }
 .css-slider label[for="slide-btn-2"] {
-  margin-left: -0.75rem;
+  margin-right: -0.75rem;
 }
 .css-slider label[for="slide-btn-3"] {
-  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 .css-slider label[for="slide-btn-4"] {
-  margin-left: 2.25rem;
+  margin-right: 2.25rem;
 }
 
 .css-slider input[type="radio"]#slide-btn-1:checked ~ #slides > .container {
@@ -110,4 +120,32 @@ input[type="radio"] {
 }
 .css-slider input[type="radio"]#slide-btn-4:checked ~ #slides > .container {
   left: -300%;
+}
+
+.css-slider input[type="radio"]#slide-btn-1:checked ~ label[for="slide-btn-1"] {
+  border: 0.1rem solid white;
+  background-color: #25282a;
+}
+
+.css-slider input[type="radio"]#slide-btn-2:checked ~ label[for="slide-btn-2"] {
+  border: 0.1rem solid white;
+  background-color: #25282a;
+}
+
+.css-slider input[type="radio"]#slide-btn-3:checked ~ label[for="slide-btn-3"] {
+  border: 0.1rem solid white;
+  background-color: #25282a;
+}
+
+.css-slider input[type="radio"]#slide-btn-4:checked ~ label[for="slide-btn-4"] {
+  border: 0.1rem solid white;
+  background-color: #25282a;
+}
+
+.signature {
+  text-align: left;
+  width: 100%;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  background: inherit;
 }
