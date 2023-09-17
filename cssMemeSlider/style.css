@@ -14,8 +14,9 @@ body {
 
 .css-slider {
   display: block;
-  height: 40rem;
-  width: 50rem;
+  height: 100%;
+  width: 100%;
+  max-width: 60rem;
   margin: auto;
   position: relative;
 }
@@ -138,4 +139,26 @@ input[type="radio"] {
   margin-left: 6rem;
   margin-top: 2rem;
   background: inherit;
+}
+
+@media (max-width: 1024px) {
+  .css-slider label {
+    right: 13%;
+  }
+}
+
+@media (max-width: 768px) {
+  .css-slider label {
+    right: 45%;
+    bottom: 13%;
+  }
+
+  .signature {
+    margin-top: 3.5rem;
+    background: inherit;
+  }
+
+  #slides > .container > .slide {
+    padding-bottom: 3rem;
+  }
 }
